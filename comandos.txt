@@ -1,0 +1,17 @@
+Comandos!!!
+&hola -> te pica la cola
+&insulto @usuario -> te manda un insulto
+&silencio -> wirbot
+&ping -> Pong!
+&elije opc 1|opc 2|...|opc n -> elije entre dos o mas cosas separadas por | defualt: si|no
+&8ball pregunta -> 8ball  alias: &8b
+&tom_gay -> Tom gay alias: tg, Tg 
+&spam @usuario <mensaje> -> Manda entre 15 y 20 mensajes por dm a la persona que lo dirigen
+
+ANIMEMES!!
+&padoru -> random padoru
+&uwu -> uwu
+&aaaa -> aaaa
+&gay_shit -> gay shit
+&love -> mona china con corazón
+&angery -> >:C
