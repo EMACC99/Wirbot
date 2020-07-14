@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix = prefix)
 status = cycle(['Mamandosela al admin \n', 'Viendo fotos de wirluis trapo \n', '¿Debería tener Only Fans 🤔?\n', '¿Qué me ves cara de pez?\n', 'Dale el beso Tom\n', "Cuckeando\n"])
 default = '\n¡Usa &comandos para ver todo lo que puedo hacer! \n'
 
-mods = [696406564730568705,662153290594648094]
+mods = [] #id's de los roles de mod aqui
 
 
 @bot.event
