@@ -12,8 +12,14 @@ Para correr el bot es de la siguente manera
 Si quieres saber más sobre el API de discord puede checar su documentación [aquí](https://discordpy.readthedocs.io/en/latest/#).
 
 
-Lo que incluye esta nueva versión que escribí, es la habilidad de montar/desmontar modulos sin necesidad de desconectar el bot aplicando los comandos `&load <nombre del modulo>` y 
-`&unload <nombre del módulo>`.
+Lo que incluye esta nueva versión que escribí, es la habilidad de montar/desmontar modulos sin necesidad de desconectar el bot aplicando los comandos `&load <nombre del módulo>` y 
+`&unload <nombre del módulo>`. Esto permite modificar los archivos de los módulos de manera más eficiente sin perder otras funcionalidades del bot así como tener las cosas mejor organizadas.
+Todos los comandos son modificables tanto en nombre como en funcionalidad así como el prefijo para comandos del bot el cual esta en el el archivo `wirbot2.0.py` representado por la siguente lineas:
+
+```py
+prefix = '&'
+bot = commands.Bot(command_prefix = prefix)
+```
 
 Estos módulos se encuentran en el directorio de Cogs.
 
