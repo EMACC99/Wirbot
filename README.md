@@ -4,7 +4,7 @@
 El codígo esta sobre MIT más las imagenes no, son para uso no lucrativo y el crédito va a sus respectivos autores.
 
 Para correr el bot se necesita python3.5 o mayor asi como tener la libreria del API de discord la cual se puede instalar de esta manera
-`pip install discord.py` O `pip3 install discord.py`
+`pip install discord.py` O `pip3 install discord.py` asi como la librería llamada Pillow que se tiene que instalar [como marca la documentación](https://pillow.readthedocs.io/en/latest/installation.html)
 
 Para correr el bot es de la siguente manera
 `python wirbot2.0.py` O  `python3 wirbot2.0.py`
