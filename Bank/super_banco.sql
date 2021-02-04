@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS Wirbank;
+USE Wirbank;
+CREATE TABLE IF NOT EXISTS WirUsuarios(
+    Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Usuario VARCHAR(255) NOT NULL,
+    Balance FLOAT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS Transacciones(
+    Id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    Origen INT NOT NULL,
+    Destinatario INT ,
+    Fecha DATETIME NOT NULL,
+    Cantidad FLOAT NULL,
+    FOREIGN KEY (Origen) REFERENCES WirUsuarios(Id),
+    FOREIGN KEY (Destinatario) REFERENCES WirUsuarios(Id)
+);
