@@ -30,6 +30,7 @@ class Ayuda(commands.Cog):
         embed.add_field(name=f'&desafio <mensaje opcional>' , value='desafia al admin')
         embed.add_field(name=f'&coca @usuario', value='Le da una coca al usuario, si no hay a quien darle la coca no te la puedes quedar!')
 
+        embed.add_field(name=f'&freeze', value="It's the anime police")
         embed.add_field(name=f'&padoru', value='random padoru')
         embed.add_field(name=f'&uwu', value='uwu')
         embed.add_field(name=f'&aaaa', value='aaaa')
@@ -39,7 +40,7 @@ class Ayuda(commands.Cog):
         embed.add_field(name=f'&mamadas', value='no diga mamadas mijo')
         embed.add_field(name=f'&nice', value='noice')
         embed.add_field(name='&mason', value='Mason, los números! Manda numeritos mágicos que funcionan con g/')
-        
+        embed.add_field(name='&head_pat @usuario', value='Le da un head pat al usuairo alias: &pet')
         embed.set_footer(text='Si necesitas más ayuda puedes pedirla con el equipo de desarrollo uwu')
 
         await ctx.author.send(embed=embed)

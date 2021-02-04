@@ -13,7 +13,9 @@ class Main(commands.Cog):
     @commands.command()
     async def silencio (self, ctx, members: commands.Greedy[discord.Member]):
         silenced = ', '.join(x.mention for x in members)
+        # hacer que se mutee si estan en voice channel
         await ctx.send(f"{silenced} https://imgur.com/a/SgeN6L9")
+        
 
     @commands.command()
     async def insulto(self, ctx, members: commands.Greedy[discord.Member]):
@@ -37,6 +39,21 @@ class Main(commands.Cog):
     async def _tomgay (self, ctx):
         await ctx.send("Tom gay", tts=True)
     
-    
+    @commands.command()
+    async def coca(self, ctx, memeber: discord.Member):
+        cocas = ["Sin azúcar", "Gary", "", "de piña"]
+        await ctx.send(f"{memeber.mention}, {ctx.author.mention} te ha dado una coca {random.choice(cocas)}")
+
+    @coca.error
+    async def coca_error(self, ctx, error):
+        if isinstance(error, commands.MissingRequiredArgument):
+            await ctx.send("No te puedes dar una coca a ti mismo!")
+        
+
+    # @commands.command()
+    # async def simp(self, ctx, member: discord.Member, type: str = "SIMP | Betoso"):
+    #     type = str(type).split('|')
+    #     await ctx.send(f"{member.mention}, {random.choice(type)}", file = discord.File('Imagenes/betoso.png'))
+
 def setup(bot):
     bot.add_cog(Main(bot))
