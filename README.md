@@ -30,7 +30,7 @@ Estos módulos se encuentran en el directorio de Cogs.
 
 ## Consideraciones
 
-Si el modulo de voz no funciona, probabelebme le falte la siguente libreria
+Si el modulo de voz no funciona, probablemente le falte la siguente libreria:
 
 * PyNaCl
 
