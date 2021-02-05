@@ -11,6 +11,9 @@ Para instalar todos los paquetes, corre `pip install -r requirements.txt`
 Para correr el bot es de la siguente manera
 `python wirbot2.0.py` O  `python3 wirbot2.0.py`
 
+Si necesitas que corra en el fondo: `python3 wirbot2.0.py &`
+Tambien puedes correr el archivo `.sh`
+
 Si quieres saber más sobre el API de discord puede checar su documentación [aquí](https://discordpy.readthedocs.io/en/latest/#).
 
 Lo que incluye esta nueva versión que escribí, es la habilidad de montar/desmontar modulos sin necesidad de desconectar el bot aplicando los comandos `&load <nombre del módulo>` y 
