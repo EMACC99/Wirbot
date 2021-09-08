@@ -1,5 +1,5 @@
 python==3.7.9
-pillow==8.2.0
+pillow==8.3.2
 mysql-connector-python==8.0.18
 discord-py==1.5.1
 pytz==2020.5
