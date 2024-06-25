@@ -1,22 +1,25 @@
 import discord
 from discord.ext import commands
 
+
 class Moderation(commands.Cog):
-    def __init__(self, bot):
-        self.bot = bot 
+    def __init__(self, bot: commands.Bot):
+        self.bot = bot
         # id_bruce = 123
-        
+
     @commands.Cog.listener()
     async def on_ready(self):
         print("Moderation class loaded")
 
-    @commands.command()
+    @commands.hybrid_command()
     async def desafio(self, ctx, *, reason=""):
         # admin = discord.utils.get(ctx.guild.roles, id=696406564730568705) #admin admin
-        admin = discord.utils.get(ctx.guild.roles, id=662153290594648094) #los lords
+        admin = discord.utils.get(ctx.guild.roles, id=662153290594648094)  # los lords
         print(type(admin))
-        print (admin)
-        await ctx.send(f"{ctx.author.mention} ha desafiado al Admin {admin.mention} {reason}")
+        print(admin)
+        await ctx.send(
+            f"{ctx.author.mention} ha desafiado al Admin {admin.mention} {reason}"
+        )
 
     # @commands.command(aliases = ["no_bruce", "shadow_bruce"]) #comando para banear al bruce
     # @commands.has_permissions(kick_members=True)
@@ -30,5 +33,6 @@ class Moderation(commands.Cog):
     #     else:
     #         await ctx.send(f"{ctx.author.mention} intento banear a alguien, notifiquenle al {ctx.guild.owner.mention}")
 
-def setup(bot):
-    bot.add_cog(Moderation(bot))    
+
+async def setup(bot: commands.Bot):
+    await bot.add_cog(Moderation(bot))
