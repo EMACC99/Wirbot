@@ -1,6 +1,6 @@
 python==3.7.9
 pillow==10.3.0
-mysql-connector-python==8.0.18
+mysql-connector-python==9.1.0
 discord-py==1.5.1
 pytz==2020.5
 beautifulsoup4==4.9.3
